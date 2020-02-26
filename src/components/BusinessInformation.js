@@ -99,7 +99,6 @@ const BusinessInfo = ({ index, business }) => {
     .slice(0, 2)
     .map(category => category.title)
     .join(', ');
-  console.log(business);
   return (
     <InfoContainer>
       <div className="info__row1">

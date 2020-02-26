@@ -7,15 +7,14 @@ import Error from './Error';
 import Business from './SingleBusiness';
 import Pagination from './Pagination';
 import BusinessMap from './BusinessMap';
-import AddressMap from './AddressMap';
 
 import { parseSearchParams } from '../helper';
 import yelpapi from '../yelpApi';
 
 const ResultsWrapper = styled.section`
   .leaflet-container {
-    width: 325px;
-    height: 325px;
+    width: 40vw;
+    height: 40vw;
     margin: 1rem auto;
     z-index: 1;
   }
@@ -29,15 +28,15 @@ const ResultsWrapper = styled.section`
     position: relative;
 
     .leaflet-container {
-      margin-left: 45vw;
+      margin-left: 55vw;
     }
 
     .map-container {
       position: ${props => (props.scrollY < '235' ? 'absolute' : 'fixed')};
       top: 0;
       left: 0;
-      height: 100%;
-      width: 350px;
+      height: 100px;
+      width: 100px;
     }
 
     .results {
@@ -103,16 +102,14 @@ const BusinessList = ({ match, handleOutsideClick }) => {
   if (isLoading) {
     return <Loading />;
   }
+  console.log(businesses);
   return (
     <ResultsWrapper
       data-testid="business-wrapper"
       scrollY={scrollY}
       onClick={handleOutsideClick}
     >
-      {/* <div className="map-container">
-        <BusinessMap businesses={businesses} />
-      </div> */}
-       <div className="map-container">
+     <div className="map-container">
         <BusinessMap businesses={businesses} />
       </div>
       <section className="results">

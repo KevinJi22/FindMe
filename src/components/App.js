@@ -29,9 +29,6 @@ const App = () => {
           <Route
             exact
             path="/"
-            // render={props => (
-            //   <Home/>
-            // )}
           />
           <Route
             path="/search/:termID/:locID/:pageID"

@@ -10,7 +10,7 @@ import { createSearchSlug } from '../helper';
 
 const Header = styled.header`
   position: relative;
-  background: linear-gradient(to bottom right, #0052D4, #4364F7, #6FB1FC);
+  background: linear-gradient(to bottom right, #e52d27, #b31217);
 
   .header__title {
     color: white;
@@ -61,8 +61,7 @@ const Header = styled.header`
     border-radius: 10px;
     padding: 0.5rem 1rem;
     margin: 0 auto;
-    color: white;
-    background: #d32323;
+    background: #E0E0E0;
     border: 1px lightgrey solid;
     width: 100%;
     transition: background 0.2s ease-in-out;
@@ -149,7 +148,7 @@ const Header = styled.header`
       width: auto;
       border-radius: 0 5px 5px 0;
       border: 0;
-      color: white;
+      color: black;
     }
 
     .form__button-icon {
@@ -234,7 +233,7 @@ const SearchBar = ({
     >
       <Link className="header__link" to="/">
         <h1 className="header__title">
-          Find Me
+          Find Me...
         </h1>
       </Link>
       <form className="form" onSubmit={e => e.preventDefault()}>
