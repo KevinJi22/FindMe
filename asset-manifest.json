@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/capital-one/static/css/main.dd8e565d.chunk.css",
+    "main.js": "/capital-one/static/js/main.ae193493.chunk.js",
+    "main.js.map": "/capital-one/static/js/main.ae193493.chunk.js.map",
+    "runtime-main.js": "/capital-one/static/js/runtime-main.b3be0585.js",
+    "runtime-main.js.map": "/capital-one/static/js/runtime-main.b3be0585.js.map",
+    "static/js/2.4c48d88a.chunk.js": "/capital-one/static/js/2.4c48d88a.chunk.js",
+    "static/js/2.4c48d88a.chunk.js.map": "/capital-one/static/js/2.4c48d88a.chunk.js.map",
+    "index.html": "/capital-one/index.html",
+    "precache-manifest.a98f541970f6a7faf5c43e72bd4bb662.js": "/capital-one/precache-manifest.a98f541970f6a7faf5c43e72bd4bb662.js",
+    "service-worker.js": "/capital-one/service-worker.js",
+    "static/css/main.dd8e565d.chunk.css.map": "/capital-one/static/css/main.dd8e565d.chunk.css.map",
+    "static/js/2.4c48d88a.chunk.js.LICENSE.txt": "/capital-one/static/js/2.4c48d88a.chunk.js.LICENSE.txt",
+    "static/media/error-404.5874a5e9.svg": "/capital-one/static/media/error-404.5874a5e9.svg",
+    "static/media/warning.a1cad2d3.svg": "/capital-one/static/media/warning.a1cad2d3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3be0585.js",
+    "static/js/2.4c48d88a.chunk.js",
+    "static/css/main.dd8e565d.chunk.css",
+    "static/js/main.ae193493.chunk.js"
+  ]
+}
