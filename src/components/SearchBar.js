@@ -181,7 +181,7 @@ const SearchBar = ({
   setInput,
   focus,
   setFocus,
-  handleOutsideClick
+  handleOutsideClick,
 }) => {
   const [inputLocation, setInputLocation] = react.useState('');
   const [isLoadingLocation, setIsLoadingLocation] = react.useState(false);
@@ -265,7 +265,6 @@ const SearchBar = ({
             className="form__user-location-list"
             onClick={e => {
               handleUserLocationClick(e);
-              setFocus(null);
             }}
           >
             <li className="form__user-location-item">
@@ -289,8 +288,13 @@ const SearchBar = ({
           className="form__button"
           type="submit"
           disabled={isLoadingLocation}
+          onKeyPress={e => {
+            if (e.key === "Enter") {
+              handleFormSubmit();
+            }
+          }}
           onClick={() => handleFormSubmit()}
-          onFocus={() => setFocus(null)}
+          
         >
           <FontAwesomeIcon className="form__button-icon" icon={faSearch} />
           <span className="form__button-text">Search</span>
@@ -308,7 +312,7 @@ SearchBar.propTypes = {
   setInput: PropTypes.func.isRequired,
   focus: PropTypes.string,
   setFocus: PropTypes.func.isRequired,
-  handleOutsideClick: PropTypes.func.isRequired
+  handleOutsideClick: PropTypes.func.isRequired,
 };
 
 export default withRouter(SearchBar);
