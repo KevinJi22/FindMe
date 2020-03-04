@@ -2,7 +2,6 @@
   "name": "findme",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kevinji22.github.io/CapitalOne/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
@@ -11,7 +10,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "gh-pages": "^2.2.0",
     "leaflet": "^1.6.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
